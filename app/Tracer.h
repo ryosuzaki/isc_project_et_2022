@@ -15,10 +15,12 @@ private:
   Motor leftWheel;
   Motor rightWheel;
   ColorSensor colorSensor; // <3>
-  const int8_t mThreshold = 20;  // <4>
-#ifndef MAKE_RASPIKE
-  const int8_t pwm = (Motor::PWM_MAX) / 6;
+  int8_t mThreshold = 20;  // <4>
+  int8_t pwm1=80;
+  int8_t pwm2=50;
+/*#ifndef MAKE_RASPIKE
+  int8_t pwm = (Motor::PWM_MAX) / 6;
 #else
-  const int8_t pwm = 60;
-#endif
+  int8_t pwm = 60;
+#endif*/
 };
