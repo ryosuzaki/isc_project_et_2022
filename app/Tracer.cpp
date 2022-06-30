@@ -16,14 +16,14 @@ void Tracer::terminate() {
 
 void Tracer::run() {
   msg_f("running...", 1);
-  pwm1=80;
-  pwm2=50;
-  mThreshold = 20;
+  high=50;
+  low=20;
+  mThreshold=20;
   if(colorSensor.getBrightness() >= mThreshold) { // <1>
-    leftWheel.setPWM(50);
-    rightWheel.setPWM(20);
+    leftWheel.setPWM(high);
+    rightWheel.setPWM(low);
   } else {   // <2>
-    leftWheel.setPWM(20);
-    rightWheel.setPWM(50);
+    leftWheel.setPWM(low);
+    rightWheel.setPWM(high);
   }
 }
