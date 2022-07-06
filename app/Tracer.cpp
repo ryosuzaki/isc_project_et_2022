@@ -1,4 +1,3 @@
-
 #include "Tracer.h" // <1>
 Tracer::Tracer():
   leftWheel(PORT_C), rightWheel(PORT_B), colorSensor(PORT_2) { // <2>
@@ -16,8 +15,8 @@ void Tracer::terminate() {
 
 void Tracer::run() {
   msg_f("running...", 1);
-  high=50;
-  low=20;
+  high=60;
+  low=30;
   mThreshold=20;
   if(colorSensor.getBrightness() >= mThreshold) { // <1>
     leftWheel.setPWM(high);

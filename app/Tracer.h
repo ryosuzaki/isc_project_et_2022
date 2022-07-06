@@ -16,8 +16,8 @@ private:
   Motor rightWheel;
   ColorSensor colorSensor; // <3>
   int8_t mThreshold = 20;  // <4>
-  int8_t high=50;
-  int8_t low=20;
+  int8_t high=60;
+  int8_t low=30;
 /*#ifndef MAKE_RASPIKE
   int8_t pwm = (Motor::PWM_MAX) / 6;
 #else
