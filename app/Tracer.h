@@ -1,6 +1,7 @@
 #include "Motor.h"       // <1>
 #include "ColorSensor.h" // <2>
 #include "util.h"        // <3>
+#include "Clock.h"
 
 using namespace ev3api;  // <4>
 
