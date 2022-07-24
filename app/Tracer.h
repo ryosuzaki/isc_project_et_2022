@@ -16,7 +16,6 @@ public:
 private:
   Motor leftWheel;
   Motor rightWheel;
-  Motor tailWheel;
   ColorSensor colorSensor; // <3>
   SonarSensor sonarSensor;
   int8_t mThreshold = 20;  // <4>
